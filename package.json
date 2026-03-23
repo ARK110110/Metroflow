@@ -1,0 +1,20 @@
+{
+  "name": "metroflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.9.2",
+    "@iconify-json/lucide": "^1.2.98",
+    "@iconify/json": "^2.2.454",
+    "@iconify/tailwind4": "^1.2.3",
+    "@tailwindcss/cli": "^4.2.2"
+  }
+}
