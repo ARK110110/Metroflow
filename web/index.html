@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metroflow</title>
+    <link rel="stylesheet" href="../src/output.css">
+  </head>
+  <body>
+    <!-- navbar -->
+     <div class="bg-[#F2F7FB] shadow-[0px_2px_4px_0px_rgba(0,0,0,0.25)] pt-[25px] pb-[25px]">
+        <div class="flex flex-row items-center justify-center">
+            <div class="gap-[50px] flex items-center mr-[100px]">
+                <img src="../assets/metroflowLogoWithoutText.svg" alt="">
+                <h1 class="text-[#0D498E] text-[48px]"><b>Metro<span class="text-black">Flow</span></b></h1>
+            </div>
+            <div class="mr-[267px]">
+                <ul class="flex flex-row gap-[75px] items-center">
+                    <li><a class="text-[24px] hover:font-bold" href="">Home</a></li>
+                    <li><a class="text-[24px] hover:font-bold" href="">Fitur</a></li>
+                    <li><a class="text-[24px] hover:font-bold" href="">Cara Kerja</a></li>
+                    <li><a class="text-[24px] hover:font-bold" href="">Tentang</a></li>
+                    <li><a class="text-[24px] hover:font-bold" href="">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="space-x-[25px]">
+                <button onclick="location.href='login.html'" class="w-[152px] h-[58px] rounded-[14px] border-black/25 border text-center items-center hover:border-2">
+                    <p><b>Login</b></p>
+                </button>
+                <button onclick="location.href='signUp.html'" class="w-[152px] h-[58px] rounded-[14px] bg-[#0D498E] text-center items-center">
+                    <p class="text-white"><b>Sign Up</b></p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="mt-[12.5px] justify-center w-full flex flex-row gap-[100px]">    
+        <div class="">
+            <h1 class="text-[96px] font-bold">Transportasi Lebih<br>Cerdas, Tanpa<br><span class="text-[#0D498E]">Tebak - Tebakan</span></h1>
+            <p class="mb-[50px] text-[32px] opacity-75">Pantau kepadatan stasiun, kereta, bus, dan mini bus<br>secara real time. Rencanakan perjalananmu lebih baik dan<br>tiba dengan nyaman</p>
+            <button class="gap-[10px] w-[290px] h-[78px] bg-[#0D498E] rounded-[14px] justify-center items-center">
+                <a href="signUp.html" class="text-white font-bold text-[32px]">Get Started</a>
+                <iconify-icon icon="formkit:arrowright" width="39.12" height="22"  style="color: #fff"></iconify-icon>
+            </button>
+            <div class="flex flex-row items-center gap-[50px]">
+                <div>
+                    <h1 class="text-[96px] font-semibold text-[#0D498E]">20K+</h1>
+                    <p class="text-[36px] text-black/50">Pengguna Aktif</p>
+                </div>
+                <hr class="w-[3px] h-[120px] bg-black/25">
+                <div>
+                    <h1 class="text-[96px] font-semibold text-[#0D498E]">60+</h1>
+                    <p class="text-[36px] text-black/50">Stasiun Terpantau</p>
+                </div>
+                <hr class="w-[3px] h-[120px] bg-black/25">
+                <div>
+                    <h1 class="text-[96px] font-semibold text-[#0D498E]">30d</h1>
+                    <p class="text-[36px] text-black/50">Update Real-Time</p>
+                </div>
+            </div>
+            <!-- right -->
+        </div>
+        <div class="items-center flex flex-row">
+            <img src="../assets/busway_tj.png" alt="Header Image">
+        </div>
+    </div>
+      <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  </body>
+</html>
