@@ -17,9 +17,9 @@
         <!-- kanan -->
         <div class="bg-[#f2f3fb] flex flex-col w-[750px] h-[875px] justify-center items-center rounded-lg">
           <p class="text-[1.5rem] pt-[161px] text-center mb-[100px]">MetroFlow</p>
-          <input class="mb-[10px] pl-[15.43px] border-1 rounded-[14px] border-black/25 w-[568px] h-[62px] placeholder:text-[14px] focus:border-none focus:outline-none focus:ring-4 focus:ring-[#0D498E]" type="email" placeholder="Email">
-          <input class="mb-[20px] pl-[15.43px] border-1 rounded-[14px] border-black/25 w-[568px] h-[62px] placeholder:text-[14px] focus:border-none focus:outline-none focus:ring-4 focus:ring-[#0D498E]" type="password" placeholder="Password">
-          <button class="cursor-pointer mb-[10px] bg-[#0D498E] rounded-[14px] w-[568px] h-[62px] text-[14px] text-white" onclick="location.href='home.html'">Login</button>
+          <input id="email" class="mb-[10px] pl-[15.43px] border-1 rounded-[14px] border-black/25 w-[568px] h-[62px] placeholder:text-[14px] focus:border-none focus:outline-none focus:ring-4 focus:ring-[#0D498E]" type="email" placeholder="Email">
+          <input id="password" class="mb-[20px] pl-[15.43px] border-1 rounded-[14px] border-black/25 w-[568px] h-[62px] placeholder:text-[14px] focus:border-none focus:outline-none focus:ring-4 focus:ring-[#0D498E]" type="password" placeholder="Password">
+          <button class="cursor-pointer mb-[10px] bg-[#0D498E] rounded-[14px] w-[568px] h-[62px] text-[14px] text-white" onclick="login()">Login</button>
           <button class="cursor-pointer mb-[10px] bg-[#DEDEDE] border-1 rounded-[14px] border-black/25 w-[568px] h-[62px] text-[14px] text-[#000000]/52">Forgot Password</button>
           <div class="mb-[10px] flex flex-row self-center justify-between w-[568px]">
             <hr class="mt-3 w-[266px] border-1 border-[#595959]" />
@@ -34,5 +34,6 @@
         </div>
       </div>
       <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+      <script src="login.js"></script>
   </body>
 </html>
