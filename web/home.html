@@ -1,17 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
 
-  <style> gmp-map {   height: 100%; } html, body {   height: 100%;   margin: 0;   padding: 0; } </style>
-    <link rel="stylesheet" href="../src/output.css">
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB627C92mJZWhJ1LO33Hwb3Xs9sAFf_OW0&libraries=maps,marker&v=weekly&internal_usage_attribution_ids=gmp_git_jsapisamples_v1_web-components" defer></script>
-</head>
-<body>
+    <style>
+      gmp-map {
+        height: 100%;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <link rel="stylesheet" href="../src/output.css" />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB627C92mJZWhJ1LO33Hwb3Xs9sAFf_OW0&libraries=maps,marker&v=weekly&internal_usage_attribution_ids=gmp_git_jsapisamples_v1_web-components"
+      defer
+    ></script>
+  </head>
+  <body>
     <div class="relative h-screen">
-    <gmp-map
+      <gmp-map
         center="-6.1963544,106.8228259"
         zoom="14"
         map-id="DEMO_MAP_ID"
@@ -19,69 +32,158 @@
         map-type-control="false"
         fullscreen-control="false"
         street-view-control="false"
-        zoom-control="false">
-    </gmp-map>
-    <div class="absolute left-1/2 -translate-x-1/2 top-[50px]">
-        <div class="w-[1720px] h-[192px] bg-[#3F3F3F] rounded-[12.5px] justify-center items-center flex"><h1 class="italic opacity-10 text-white text-[50px]">BANNER</h1></div>    
-    </div>
-    
-    <!-- Sidebar navigation -->
-    <div class="absolute top-1/2 -translate-y-1/2 w-[67px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-br-[10px] rounded-tr-[10px] bg-white"> 
-        <li class="flex justify-center items-center gap-[100px] flex-col py-[52px] px-[16px]">
-            <a href="home.html" class="bg-[#0D498E] rounded-full w-[35px] h-[35px] justify-center items-center flex">
-                <iconify-icon icon="material-symbols:home-outline" width="30" height="30" style="color: #fff"></iconify-icon>
-                <p class="hidden">Home</p>
-            </a>
-            
-            <a href="#ticket" class="items-center justify-center flex flex-col">
-                <iconify-icon icon="streamline-sharp:ticket-star" width="25" height="25" style="color: #0D498E"></iconify-icon>
-                <p class="font-bold text-[12px] text-[#0D498E]">Ticket</p>
-            </a>
-            
-            <a href="profile.html" class="items-center justify-center flex flex-col">
-                <iconify-icon icon="mdi:user-outline" width="25" height="25" style="color: #0D498E"></iconify-icon>
-                <p class="font-bold text-[12px] text-[#0D498E]">Profile</p>
-            </a>
+        zoom-control="false"
+      >
+      </gmp-map>
+      <div class="absolute left-1/2 -translate-x-1/2 top-[50px]">
+        <div
+          class="w-[1720px] h-[192px] bg-[#3F3F3F] rounded-[12.5px] justify-center items-center flex"
+        >
+          <h1 class="italic opacity-10 text-white text-[50px]">BANNER</h1>
+        </div>
+      </div>
+
+      <!-- Sidebar navigation -->
+      <div
+        class="absolute top-1/2 -translate-y-1/2 w-[67px] shadow-[4px_4px_4px_0px_rgba(0,0,0,0.25)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-br-[10px] rounded-tr-[10px] bg-white"
+      >
+        <li
+          class="flex justify-center items-center gap-[100px] flex-col py-[52px] px-[16px]"
+        >
+          <a
+            href="home.html"
+            class="bg-[#0D498E] rounded-full w-[35px] h-[35px] justify-center items-center flex"
+          >
+            <iconify-icon
+              icon="material-symbols:home-outline"
+              width="30"
+              height="30"
+              style="color: #fff"
+            ></iconify-icon>
+            <p class="hidden">Home</p>
+          </a>
+
+          <a href="#ticket" class="items-center justify-center flex flex-col">
+            <iconify-icon
+              icon="streamline-sharp:ticket-star"
+              width="25"
+              height="25"
+              style="color: #0d498e"
+            ></iconify-icon>
+            <p class="font-bold text-[12px] text-[#0D498E]">Ticket</p>
+          </a>
+
+          <a
+            href="profile.html"
+            class="items-center justify-center flex flex-col"
+          >
+            <iconify-icon
+              icon="mdi:user-outline"
+              width="25"
+              height="25"
+              style="color: #0d498e"
+            ></iconify-icon>
+            <p class="font-bold text-[12px] text-[#0D498E]">Profile</p>
+          </a>
         </li>
-    </div>
-    
-    <div class="absolute left-1/2 -translate-x-1/2 bottom-[64px] flex flex-row gap-[12px]">
+      </div>
+
+      <div
+        class="absolute left-1/2 -translate-x-1/2 bottom-[64px] flex flex-row gap-[12px]"
+      >
         <a href="#Destination">
-            <div class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer">
-                <iconify-icon icon="streamline-cyber:location-map" width="35" height="35" class="text-[#0D498E] group-hover:text-[#ffff] duration-200"></iconify-icon>
-                <h3 class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200">Your Destination</h3>
-                <p class="text-[12px] text-black/50 group-hover:text-white/50 duration-200">Where are you going today?</p>
-            </div>
+          <div
+            class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer"
+          >
+            <iconify-icon
+              icon="streamline-cyber:location-map"
+              width="35"
+              height="35"
+              class="text-[#0D498E] group-hover:text-[#ffff] duration-200"
+            ></iconify-icon>
+            <h3
+              class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200"
+            >
+              Your Destination
+            </h3>
+            <p
+              class="text-[12px] text-black/50 group-hover:text-white/50 duration-200"
+            >
+              Where are you going today?
+            </p>
+          </div>
         </a>
         <a href="#minibus">
-            <div class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer">
-                <iconify-icon icon="fluent-emoji-high-contrast:minibus" width="35" height="35" class="text-[#0D498E] group-hover:text-[#ffff] duration-200"></iconify-icon>
-                <h3 class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200">MiniBus & Route</h3>
-                <p class="text-[12px] text-black/50 group-hover:text-white/50 duration-200">Find TJ MiniBus Stop and Route</p>
-            </div>
+          <div
+            class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer"
+          >
+            <iconify-icon
+              icon="fluent-emoji-high-contrast:minibus"
+              width="35"
+              height="35"
+              class="text-[#0D498E] group-hover:text-[#ffff] duration-200"
+            ></iconify-icon>
+            <h3
+              class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200"
+            >
+              MiniBus & Route
+            </h3>
+            <p
+              class="text-[12px] text-black/50 group-hover:text-white/50 duration-200"
+            >
+              Find TJ MiniBus Stop and Route
+            </p>
+          </div>
         </a>
         <a href="#train">
-            <div class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer">
-                <iconify-icon icon="material-symbols:train-outline" width="35" height="35" class="text-[#0D498E] group-hover:text-[#ffff] duration-200"></iconify-icon>
-                <h3 class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200">Train & Route</h3>
-                <p class="text-[12px] text-black/50 group-hover:text-white/50 duration-200">Find TJ Train Station and Route</p>
-            </div>
+          <div
+            class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer"
+          >
+            <iconify-icon
+              icon="material-symbols:train-outline"
+              width="35"
+              height="35"
+              class="text-[#0D498E] group-hover:text-[#ffff] duration-200"
+            ></iconify-icon>
+            <h3
+              class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200"
+            >
+              Train & Route
+            </h3>
+            <p
+              class="text-[12px] text-black/50 group-hover:text-white/50 duration-200"
+            >
+              Find TJ Train Station and Route
+            </p>
+          </div>
         </a>
         <a href="#bus">
-            <div class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer">
-                <iconify-icon icon="solar:bus-linear" width="35" height="35" class="text-[#0D498E] group-hover:text-[#ffff] duration-200"></iconify-icon>
-                <h3 class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200">Bus Stop & Route</h3>
-                <p class="text-[12px] text-black/50 group-hover:text-white/50 duration-200">Find TJ Bus Stop and Route</p>
-            </div>
+          <div
+            class="w-[190px] h-[85px] bg-white shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[5px] justify-center p-[5px] flex flex-col group hover:bg-[#0D498E] duration-200 cursor-pointer"
+          >
+            <iconify-icon
+              icon="solar:bus-linear"
+              width="35"
+              height="35"
+              class="text-[#0D498E] group-hover:text-[#ffff] duration-200"
+            ></iconify-icon>
+            <h3
+              class="text-[16px] font-semibold text-[#0D498E] group-hover:text-white duration-200"
+            >
+              Bus Stop & Route
+            </h3>
+            <p
+              class="text-[12px] text-black/50 group-hover:text-white/50 duration-200"
+            >
+              Find TJ Bus Stop and Route
+            </p>
+          </div>
         </a>
-
-    </div>
+      </div>
     </div>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
-</body>
+  </body>
 </html>
-
-
 
 <!--
 <html>
