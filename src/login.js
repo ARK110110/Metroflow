@@ -6,10 +6,9 @@ async function login() {
   let berhasil = false;
   for (let i = 0; i < data.length; i++) {
     if (email === data[i].email && password === data[i].password) {
-      // simpan email ke session
       sessionStorage.setItem("email", data[i].email);
       berhasil = true;
-      // redirect ke dashboard
+
       window.location.href = "home.html";
       break;
     }
